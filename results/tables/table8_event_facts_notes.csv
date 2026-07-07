@@ -1,0 +1,7 @@
+Metric,Value / note,Source handling
+Exploit amount,293M and 116.5k rsETH,Cross-check before final paper citation
+Attack vector,LayerZero / DVN bridge validation failure,Cross-check before final paper citation
+Aave contract breached,"No, indirect exposure through collateral pathway",Cross-check before final paper citation
+Aave outflows,All-chain outflow figure should be footnoted separately from Ethereum-mainnet panel,Manuscript note
+Spark inflow,Keep raw and whale-adjusted values distinct,Notebook output
+RWA collateral components,Use full decomposition rather than partial subtotal,Notebook output

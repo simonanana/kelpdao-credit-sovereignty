@@ -1,0 +1,9 @@
+Pair,Spec,N,R2,DW,DiD_coef,HAC_SE,p_value,sig,Pct_effect
+Aave_vs_Spark,Spec A Baseline,262,0.9864,0.181,-0.6144,0.1128,0.0,***,-45.9
+Aave_vs_Spark,Spec B Trends,262,0.9878,0.228,-0.7523,0.1322,0.0,***,-52.9
+Aave_vs_Spark,Spec C FirstDiff,260,0.1364,1.728,-0.0844,0.0305,0.00571,***,
+Aave_vs_Spark,Spec D LaggedDV,260,0.9989,1.747,-0.1024,0.0296,0.00055,***,-9.7
+Aave_vs_Morpho,Spec A Baseline,262,0.9763,0.162,-0.6123,0.1002,0.0,***,-45.8
+Aave_vs_Morpho,Spec B Trends,262,0.9881,0.237,-0.3008,0.0892,0.00075,***,-26.0
+Aave_vs_Morpho,Spec C FirstDiff,260,0.1379,1.89,-0.0431,0.0296,0.14517,ns,
+Aave_vs_Morpho,Spec D LaggedDV,260,0.9984,1.901,-0.075,0.0285,0.0086,***,-7.2

@@ -1,0 +1,5 @@
+Pool,Protocol,N_pre,Pre_start,Pre_mean_APY,Pre_sd_APY,N_post,Post_mean_APY,Post_sd_APY,Post_max_APY
+Aave V3 USDC Ethereum,Aave,1167,2023-02-06,4.86,3.444,11,9.05,3.811,12.6
+Aave V3 DAI Ethereum,Aave,1167,2023-02-06,4.53,3.618,11,12.14,7.829,29.9
+Spark USDS Ethereum,Spark,421,2025-02-21,4.53,0.716,11,3.69,0.05,3.75
+Spark Savings USDC ETH,Spark,112,2025-12-22,3.91,0.12,11,3.69,0.05,3.75

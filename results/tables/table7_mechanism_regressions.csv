@@ -1,0 +1,5 @@
+Model,Variable,Coef,SE_HAC,p_value,DiD_attenuation_pct
+M1: APYStress → next-day TVL growth,apy_stress,-0.0062,0.0016,0.00014,
+M2a: Preferred DiD (no rate control),did,-0.1024,0.0296,0.00055,
+M2b: Preferred DiD + APY stress,did,-0.0095,0.0164,0.56344,90.72
+M2b: Preferred DiD + APY stress,apy_stress,-0.0102,0.0014,0.0,

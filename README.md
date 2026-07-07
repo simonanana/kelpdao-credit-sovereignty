@@ -35,7 +35,6 @@ The pre-event Levene tests show Spark's rate stability is a *structural* propert
 ├── results/
 │   ├── tables/                 # Tables 3–7 + robustness outputs (CSV)
 │   └── figures/                # Figures 1–8 (PNG)
-├── paper/                      # Manuscript abstract / preprint link
 └── requirements.txt
 ```
 

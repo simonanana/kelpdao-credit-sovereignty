@@ -18,4 +18,3 @@
 > lending protocol design.
 
 The full manuscript is under review / available upon request.
-<!-- If you post a preprint (arXiv / SSRN), replace the line above with the link. -->

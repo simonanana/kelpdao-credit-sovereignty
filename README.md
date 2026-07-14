@@ -62,6 +62,45 @@ python scripts/run_analysis.py --no-cache
 
 Outputs: regression tables (CSV) in `results/tables/`, figures (PNG) in `results/figures/`.
 
+### Submission-ready upgrades (`upgrade/`)
+
+The paper's submitted version incorporates methodological additions that live
+in the `upgrade/` folder. These do not modify the original `src/` package; they
+reuse it and add new estimators, decompositions, and data sources.
+
+```bash
+# Reproduce the submission-version numbers on the committed data snapshot
+python upgrade/run_upgrade.py
+
+# Optional: refresh from live APIs
+python upgrade/run_upgrade.py --no-cache
+```
+
+Outputs are written with a `FINAL_` prefix in `results/tables/` and a `fig7_`
+prefix in `results/figures/` so they never collide with v1 outputs. Highlights:
+
+- **Design-robust inference:** randomization inference across a 20-protocol
+  donor pool, synthetic control with RMSPE placebo p-values, simplified
+  synthetic DiD (Abadie et al. 2010; Arkhangelsky et al. 2021).
+- **Price–flow decomposition:** token-level attribution of TVL change to
+  quantity vs. price using DefiLlama's `tokens` field; stablecoin-only
+  Spec D immune to price effects by construction.
+- **SUTVA bounds:** 0/50/100% attribution of Spark's abnormal inflow to
+  Aave outflows; external controls on Solana and BSC.
+- **Corrected event-study:** pre-period-only detrending and first differences
+  (the full-sample trend absorption used in a working draft is deprecated
+  and not used in the paper).
+- **On-chain utilization:** archival `eth_call` on Aave V3's
+  `ProtocolDataProvider.getReserveData(...)`, replacing DefiLlama's paywalled
+  `chartLendBorrow` endpoint.
+- **Brown–Forsythe with bootstrap CI:** median-centered Levene, one-sided
+  test, bootstrap 95% CI on the variance ratio (replaces v1 mean-centered,
+  two-sided Levene).
+
+See `upgrade/README.md` for the manuscript ↔ code map, manual steps
+(Aave contract address verification, DAI reserve factor confirmation),
+and method references.
+
 ## Data
 
 All primary data are from **DefiLlama** (industry-standard on-chain metrics), accessed via its public REST API:
